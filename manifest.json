@@ -1,0 +1,14 @@
+{
+  "name": "ICSE 10th — Study Space",
+  "short_name": "ICSE 10th",
+  "description": "A study companion for ICSE Class 10.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8f8fc",
+  "theme_color": "#6558e8",
+  "icons": [
+    {"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6558e8">
+  <meta name="description" content="ICSE 10th — your Class 10 study space for notes, quizzes and planning.">
+  <title>ICSE 10th — Study Space</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="ICSE 10th home">
+        <span class="brand-mark">i<span>10</span></span>
+        <span class="brand-copy"><strong>icse 10th</strong><small>YOUR STUDY SPACE</small></span>
+      </a>
+      <button class="icon-button" id="installBtn" hidden aria-label="Install app" title="Install app">↓</button>
+      <button class="avatar" id="profileBtn" aria-label="Profile">S</button>
+    </header>
+
+    <main id="mainContent">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="spark">✦</span> YOUR ICSE JOURNEY</span>
+          <h1>Small steps.<br><span>Big results.</span></h1>
+          <p>Make today count. Your next chapter starts here.</p>
+          <button class="primary-button" data-go="subjects">Explore subjects <span>↗</span></button>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-sun"></div><div class="art-book book-back"></div><div class="art-book book-front"></div>
+          <div class="art-pencil"></div><div class="art-star star-one">✦</div><div class="art-star star-two">✧</div>
+        </div>
+      </section>
+
+      <section class="welcome-row">
+        <div><span class="section-kicker" id="todayDate">YOUR STUDY DAY</span><h2>Ready to learn today? <span>✦</span></h2><p>One focused session at a time.</p></div>
+        <div class="streak"><span>🔥</span><strong>0 day</strong><small>study streak</small></div>
+      </section>
+
+      <section class="stats-grid" aria-label="Your progress">
+        <article class="stat-card"><span class="stat-icon lavender">▤</span><div><strong id="statSubjects">6</strong><small>Subjects</small></div><span class="stat-foot">Explore</span></article>
+        <article class="stat-card"><span class="stat-icon mint">✓</span><div><strong id="statDone">0%</strong><small>Progress</small></div><span class="stat-foot">Keep going</span></article>
+        <article class="stat-card"><span class="stat-icon peach">◷</span><div><strong id="statTasks">0</strong><small>Tasks today</small></div><span class="stat-foot">Plan ahead</span></article>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading"><div><span class="section-kicker">YOUR LEARNING HUB</span><h2>Pick up where you left off</h2></div><button class="text-button" data-go="subjects">See all <span>→</span></button></div>
+        <div class="subject-grid" id="subjectPreview"></div>
+      </section>
+
+      <section class="focus-card">
+        <div class="focus-icon">✦</div><div class="focus-copy"><span class="section-kicker">TODAY'S FOCUS</span><h3>Build your study rhythm</h3><p>Add a small task to your planner and tick it off when you're done.</p></div>
+        <button class="round-arrow" data-go="planner" aria-label="Open planner">↗</button>
+      </section>
+    </main>
+
+    <main id="pageContent" hidden></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-tab="home"><span class="nav-icon">⌂</span><small>Home</small></button>
+      <button class="nav-item" data-tab="subjects"><span class="nav-icon">▦</span><small>Subjects</small></button>
+      <button class="nav-item" data-tab="practice"><span class="nav-icon">✎</span><small>Practice</small></button>
+      <button class="nav-item" data-tab="planner"><span class="nav-icon">▣</span><small>Planner</small></button>
+      <button class="nav-item" data-tab="progress"><span class="nav-icon">◔</span><small>Progress</small></button>
+    </nav>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
